@@ -35,3 +35,10 @@ function yesClick() {
         origin: { y: 0.6 }
     });
 }
+
+function moveButton() {
+    const button = document.querySelector('.no');
+    button.style.top = Math.random() * window.innerHeight + "px";
+    button.style.left = Math.random() * window.innerWidth + "px";
+}
+
