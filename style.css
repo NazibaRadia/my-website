@@ -1,0 +1,111 @@
+body {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffebf2;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 100px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    animation: fadeIn 2s;
+}
+
+h1 {
+    color: #ff4d79;
+    font-size: 28px;
+    animation: bounce 1s infinite;
+}
+
+.message {
+    font-size: 20px;
+    color: #d63384;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.yes {
+    background-color: #ff66b2;
+    color: white;
+    box-shadow: 0px 3px 5px rgba(255, 105, 180, 0.5);
+    animation: glow 1.5s infinite alternate;
+}
+
+.no {
+    background-color: #ff4d4d;
+    color: white;
+    position: absolute;
+}
+
+.yes:hover {
+    background-color: #ff3385;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 5px #ff4d79; }
+    50% { box-shadow: 0 0 15px #ff66b2; }
+    100% { box-shadow: 0 0 5px #ff4d79; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes floating-hearts {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-100px); }
+}
+
+/* Floating hearts */
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    animation: floating-hearts 3s linear infinite;
+}
+
+.gif {
+    width: 150px;  /* Adjust size as needed */
+    height: auto;  /* Keep aspect ratio */
+    display: block;
+    margin: 10px auto; /* Center the GIF */
+}
+
+#gifContainer {
+    display: flex;
+    justify-content: center; /* Center the GIFs */
+    gap: 10px; /* Add space between them */
+}
+
+.gif {
+    width: auto;  /* Maintain aspect ratio */
+    height: 150px; /* Set a fixed height */
+    max-width: 100%; /* Ensure GIF doesn't overflow */
+}
+
+

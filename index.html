@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine Devinda? 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>💌 Will You Be My Valentine Devinda? 💕</h1>
+        <p class="message">Say yes or I'll be ready to punch you when I come back💘🥰</p>
+        
+        <!-- GIF container (initially empty) -->
+        <div id="gifContainer">
+            <img src="after-yes-1.gif" class="gif">
+            <img src="after-yes-2.gif" class="gif">
+
+        </div>
+
+        <div class="buttons">
+            <button class="yes" onclick="yesClick()">Yes! 💖</button>
+            <button class="no" onmouseover="moveButton()">No 😢</button>
+        </div>
+    </div>
+
+    <audio id="loveSong" loop>
+        <source src="see-you-again.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
